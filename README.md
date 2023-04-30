@@ -80,21 +80,15 @@ Run the following script, changing any filenames as necessary
 
 #!/bin/bash
 
-# Define the reference genome file
 REFERENCE="REL606.fasta"
 
-# Loop through all breseq_output directories in the directory
 for dir in breseq_output_*; do
-    # Check if the directory exists and is a directory
     if [ -d "$dir" ]; then
-        # Extract the sample name from the directory name
         sample_name="${dir#breseq_output_}"
         echo "Processing sample: $sample_name"
 
-        # Construct the output file name
         consensus_file="consensus_${sample_name}.fasta"
 
-        # Run gdtools APPLY command
         gdtools APPLY -f FASTA -r "$REFERENCE" -o "$consensus_file" "${dir}/output/output.gd"
     fi
 done

@@ -7,26 +7,39 @@ Control group: https://www.ncbi.nlm.nih.gov/Traces/study/?WebEnv=MCID_644ecdcf67
 Control group was contained the following SRR run IDs:
 
 SRR2584703
+
 SRR2584705
+
 SRR2584774
+
 SRR2591040
 
 SRR2584782
+
 SRR2584784
+
 SRR2584821
+
 SRR2584822
 
 SRR2589058
+
 SRR2589059
+
 SRR2584927
+
 SRR2589067
 
 SRR2589071
+
 SRR2584936
+
 SRR2584407
+
 SRR2584406
 
 Test Group: https://www.ncbi.nlm.nih.gov/Traces/study/?WebEnv=MCID_644ecdcf674f404c6fb28958&query_key=6&GALAXY_URL=https%3A%2F%2Fusegalaxy.org%2Ftool_runner%3Ftool_id%3Dsra_source
+
 Test group contained all runs from the above link.
 
 

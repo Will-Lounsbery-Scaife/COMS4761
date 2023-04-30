@@ -50,6 +50,7 @@ Please note that you will have to change the paths in the QC scripts depending o
 
 To get the QC report on all .fastq files prior to trimming, run the following bash script:
 
+```
 #!/bin/bash
 cd /path/to/directory/containing/fastq/files
 
@@ -57,7 +58,7 @@ for file in *.fastq
 do
   fastqc "$file" -o /path/to/your/output/qc/report/files
 done
-
+```
 
 
 ### Running trimmomatic ###
@@ -72,12 +73,14 @@ After running trimmomatic, run the fastqc command from the previous step on all 
 Install breseq: https://github.com/barricklab/breseq
 
 Run the script titled "run_breseq.slurm"
+
 Make sure to update the file paths, file names, and conda environment names as necessary
 
 ### Generate consensus files ###
 
-Run the following script, changing any filenames as necessary
+Run the following script, changing any filenames as necessary:
 
+```
 #!/bin/bash
 
 REFERENCE="REL606.fasta"
@@ -94,7 +97,7 @@ for dir in breseq_output_*; do
 done
 
 echo "All consensus sequences generated."
-
+```
 
 ### Running MAFFT for MSA ###
 
